@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "event-master",
+    "slug": "event-master",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "event-master"
+}
