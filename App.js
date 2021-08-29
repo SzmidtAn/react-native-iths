@@ -1,6 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Button, StyleSheet, Text, TextInput, View} from 'react-native';
 import {Categories} from "./src/app/views/Categories";
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
@@ -30,15 +28,6 @@ export default function App() {
 </AppStateProvider>
 );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 const AppStateProvider = props => {
 

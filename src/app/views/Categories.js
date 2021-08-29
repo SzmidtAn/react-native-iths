@@ -1,9 +1,5 @@
 import {Pressable, Text, StyleSheet, ScrollView, View} from "react-native";
 import React, {useContext, useEffect, useState} from 'react';
-import {API_KEY, API_URL, API_TOKEN} from "../constants";
-import {dataApi} from "../api";
-import {AppStateContext} from '../../../App';
-
 
 export const Categories = ({navigation}) => {
     const [category, setCategory] = useState(["Dogs", "Cats"])
@@ -35,7 +31,6 @@ export const Categories = ({navigation}) => {
             })}
         </View>
     )
-
 }
 
 export const styles = StyleSheet.create({

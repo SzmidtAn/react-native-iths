@@ -1,21 +1,13 @@
 import {Pressable, Text, StyleSheet, ScrollView, Image, Button} from "react-native";
 import React, {useContext, useEffect, useState} from 'react';
-import {API_KEY, API_URL, API_TOKEN} from "../constants";
 import {dataApi} from "../api";
-import {AppStateContext} from '../../../App';
-
 
 export const CatsOnly = ({navigation, route}) => {
-
-    const animalsCategory = route.params.category
-
     const [animals, setAnimals] = useState()
 
     useEffect(() => {
         getAllCatsFromApi()
     }, [])
-
-
 
     const getAllCatsFromApi = () => {
         dataApi.getAllCats()
@@ -23,10 +15,8 @@ export const CatsOnly = ({navigation, route}) => {
             .then(i => {
                 console.log(i)
                 setAnimals(i)
-
             })
     }
-
 
     return(
         <>
@@ -47,9 +37,7 @@ export const CatsOnly = ({navigation, route}) => {
         </>
     )
 
-
 }
-
 
 const styles = StyleSheet.create({
     container: {

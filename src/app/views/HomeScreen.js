@@ -4,7 +4,6 @@ import {useState} from "react";
 import {AppStateContext} from "../../../App";
 import {styles} from "./Categories";
 
-
 export const HomeScreen = ({ navigation }) => {
     const [value, setValue] = React.useContext(AppStateContext);
     const [name, setName] = useState()

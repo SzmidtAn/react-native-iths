@@ -1,12 +1,8 @@
 import {Pressable, Text, StyleSheet, ScrollView, Image, Button} from "react-native";
 import React, {useContext, useEffect, useState} from 'react';
-import {API_KEY, API_URL, API_TOKEN} from "../constants";
 import {dataApi} from "../api";
-import {AppStateContext} from '../../../App';
-
 
 export const Animals = ({navigation, route}) => {
-
     const animalsCategory = route.params.category
     const [animals, setAnimals] = useState()
 
@@ -38,9 +34,7 @@ export const Animals = ({navigation, route}) => {
         }else {
             getCatFromApi()
         }
-
         }
-
 
     return(
         <>
@@ -64,10 +58,7 @@ export const Animals = ({navigation, route}) => {
             </Pressable>
         </>
     )
-
-
 }
-
 
 const styles = StyleSheet.create({
     container: {
