@@ -24,7 +24,7 @@ export const CatsOnly = ({navigation, route}) => {
                 {animals?.map(i => {
                     return (
                         <Image
-
+                            key={i.url}
                             style={styles.logo}
                             source={{
                                 uri: i.url,

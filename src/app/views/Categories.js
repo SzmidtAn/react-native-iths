@@ -16,6 +16,7 @@ export const Categories = ({navigation}) => {
             <Text style={styles.title}>Categories</Text>
             {!category ? null : category?.map(i => {
                 return <Pressable
+                    key={i}
                     style={({pressed}) => [
                         {
                             backgroundColor: pressed ? 'red' : 'blue',
